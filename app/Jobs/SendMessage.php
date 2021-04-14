@@ -37,7 +37,7 @@ class SendMessage implements ShouldQueue
     /**
      * Execute the job.
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return bool
      * @throws \Exception
      */
     public function handle()

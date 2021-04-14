@@ -35,11 +35,11 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJ1c2VybmFtZSI6ImRvZGk
 
 Список запросов:
 
--/api/users - Получить список всех пользователей
+- /api/users - Получить список всех пользователей
 
--/api/user?email={емеил} - Получить юзера по емеилу
+- /api/user?email={емеил} - Получить юзера по емеилу
 
--/api/user/sendEmail - Отправить письмо пользователю.
+- /api/user/sendEmail - Отправить письмо пользователю.
 Обязательные поля - email,text. Если в email написать all, то текст отправится всем пользователям.
 
 Для отправки запроса обязательно указывать поле access_token со статическим Api ключом  в header

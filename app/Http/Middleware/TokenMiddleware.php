@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 
-use App\Http\Services\Token;
 use Closure;
 use Illuminate\Http\Request;
 
@@ -23,10 +22,6 @@ class TokenMiddleware
         {
             return response()->json(['status' => 'Token is Invalid']);
         }
-//        $checkToken = Token::checkToken($request);
-//        if(!$checkToken) {
-//            return response()->json(['status' => 'Token is Invalid']);
-//        }
         return $next($request);
     }
 }
