@@ -11,12 +11,10 @@
 
 Для запуска требуется:
 
-
+- Создать .env, скопировать содержимое .env, внести данные своей базы данных(название, логин,пароль)
 - npm install
 - composer install
-- composer update
 - php artisan key:generate
-- php artisan queue:table
 - php artisan migrate
 - php artisan db:seed --class=UsersSeeder
 - php artisan db:seed --class=RolesSeeder
@@ -44,9 +42,9 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJ1c2VybmFtZSI6ImRvZGk
 -/api/user/sendEmail - Отправить письмо пользователю.
 Обязательные поля - email,text. Если в email написать all, то текст отправится всем пользователям.
 
-Для отправки запроса обязательно указывать поле access_token в header
+Для отправки запроса обязательно указывать поле access_token со статическим Api ключом  в header
 
-Для отправки емеила на существующий постовый ящик, можно в админке заменить один из фейковых емеилов на настойщий. 
+Для отправки емеила на существующий постовый ящик, можно в админке заменить один из фейковых емеилов на настоящий. 
 Для входа в админку надо войти на админа:
 
 -login Admin@admin.com
